@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 73;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C41DECD22C80D5F800716631 /* Nosifer.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C41DECD12C80D5F800716631 /* Nosifer.ttf */; };
+		C41DECD32C80D5F800716631 /* Nosifer.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C41DECD12C80D5F800716631 /* Nosifer.ttf */; };
+		C421FF8A2C837A1800B369E9 /* bubbles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C421FF862C837A1800B369E9 /* bubbles.mp3 */; };
+		C421FF8B2C837A1800B369E9 /* collect.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF872C837A1800B369E9 /* collect.wav */; };
+		C421FF8C2C837A1800B369E9 /* blob_mumble-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF842C837A1800B369E9 /* blob_mumble-2.wav */; };
+		C421FF8D2C837A1800B369E9 /* miss.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF882C837A1800B369E9 /* miss.wav */; };
+		C421FF8E2C837A1800B369E9 /* blob_mumble-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF832C837A1800B369E9 /* blob_mumble-1.wav */; };
+		C421FF8F2C837A1800B369E9 /* blob_mumble-3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF852C837A1800B369E9 /* blob_mumble-3.wav */; };
+		C421FF902C837A1800B369E9 /* bubbles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C421FF862C837A1800B369E9 /* bubbles.mp3 */; };
+		C421FF912C837A1800B369E9 /* collect.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF872C837A1800B369E9 /* collect.wav */; };
+		C421FF922C837A1800B369E9 /* blob_mumble-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF842C837A1800B369E9 /* blob_mumble-2.wav */; };
+		C421FF932C837A1800B369E9 /* miss.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF882C837A1800B369E9 /* miss.wav */; };
+		C421FF942C837A1800B369E9 /* blob_mumble-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF832C837A1800B369E9 /* blob_mumble-1.wav */; };
+		C421FF952C837A1800B369E9 /* blob_mumble-3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C421FF852C837A1800B369E9 /* blob_mumble-3.wav */; };
+		C421FF982C837D0E00B369E9 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C421FF962C837D0E00B369E9 /* music.mp3 */; };
+		C421FF992C837D0E00B369E9 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C421FF962C837D0E00B369E9 /* music.mp3 */; };
+		C421FF9B2C83863700B369E9 /* GloopFlow.sks in Resources */ = {isa = PBXBuildFile; fileRef = C421FF9A2C83863700B369E9 /* GloopFlow.sks */; };
+		C421FF9C2C83863700B369E9 /* GloopFlow.sks in Resources */ = {isa = PBXBuildFile; fileRef = C421FF9A2C83863700B369E9 /* GloopFlow.sks */; };
+		C42FBA952C80E4F4008A2DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42FBA942C80E4F4008A2DC7 /* Assets.xcassets */; };
+		C42FBA962C80E4F4008A2DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42FBA942C80E4F4008A2DC7 /* Assets.xcassets */; };
+		C44C7AFA2C1EB19A00C0D368 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7AF92C1EB19A00C0D368 /* Player.swift */; };
+		C44C7AFB2C1EB19A00C0D368 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7AF92C1EB19A00C0D368 /* Player.swift */; };
+		C44C7AFD2C1EB23500C0D368 /* SpriteKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7AFC2C1EB23500C0D368 /* SpriteKitHelper.swift */; };
+		C44C7AFE2C1EB23500C0D368 /* SpriteKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7AFC2C1EB23500C0D368 /* SpriteKitHelper.swift */; };
+		C44F858E2C447A330050D353 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F858D2C447A2D0050D353 /* Collectible.swift */; };
+		C44F858F2C447A330050D353 /* Collectible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F858D2C447A2D0050D353 /* Collectible.swift */; };
+		C4ACFBAA2C1DA7DA00184FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ACFBA92C1DA7DA00184FA5 /* AppDelegate.swift */; };
+		C4ACFBAC2C1DA7DA00184FA5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ACFBAB2C1DA7DA00184FA5 /* GameViewController.swift */; };
+		C4ACFBAF2C1DA7DA00184FA5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4ACFBAE2C1DA7DA00184FA5 /* Base */; };
+		C4ACFBB22C1DA7DA00184FA5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4ACFBB12C1DA7DA00184FA5 /* Base */; };
+		C4ACFBBA2C1DA7DA00184FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ACFBB92C1DA7DA00184FA5 /* AppDelegate.swift */; };
+		C4ACFBBC2C1DA7DA00184FA5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ACFBBB2C1DA7DA00184FA5 /* GameViewController.swift */; };
+		C4ACFBBF2C1DA7DA00184FA5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4ACFBBE2C1DA7DA00184FA5 /* Base */; };
+		C4ACFBC52C1DA7DA00184FA5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ACFBA02C1DA7D900184FA5 /* GameScene.swift */; };
+		C4ACFBC62C1DA7DA00184FA5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ACFBA02C1DA7D900184FA5 /* GameScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C41DECD12C80D5F800716631 /* Nosifer.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nosifer.ttf; sourceTree = "<group>"; };
+		C421FF802C80E7B500B369E9 /* gloopdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gloopdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C421FF812C80E7B500B369E9 /* gloopdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gloopdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C421FF822C80EB9800B369E9 /* gloopdrop-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "gloopdrop-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C421FF832C837A1800B369E9 /* blob_mumble-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "blob_mumble-1.wav"; sourceTree = "<group>"; };
+		C421FF842C837A1800B369E9 /* blob_mumble-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "blob_mumble-2.wav"; sourceTree = "<group>"; };
+		C421FF852C837A1800B369E9 /* blob_mumble-3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "blob_mumble-3.wav"; sourceTree = "<group>"; };
+		C421FF862C837A1800B369E9 /* bubbles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubbles.mp3; sourceTree = "<group>"; };
+		C421FF872C837A1800B369E9 /* collect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collect.wav; sourceTree = "<group>"; };
+		C421FF882C837A1800B369E9 /* miss.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = miss.wav; sourceTree = "<group>"; };
+		C421FF962C837D0E00B369E9 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		C421FF9A2C83863700B369E9 /* GloopFlow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GloopFlow.sks; sourceTree = "<group>"; };
+		C42FBA942C80E4F4008A2DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C44C7AF92C1EB19A00C0D368 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C44C7AFC2C1EB23500C0D368 /* SpriteKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitHelper.swift; sourceTree = "<group>"; };
+		C44F858D2C447A2D0050D353 /* Collectible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collectible.swift; sourceTree = "<group>"; };
+		C4ACFBA02C1DA7D900184FA5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C4ACFBA92C1DA7DA00184FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4ACFBAB2C1DA7DA00184FA5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C4ACFBAE2C1DA7DA00184FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4ACFBB12C1DA7DA00184FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4ACFBB92C1DA7DA00184FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4ACFBBB2C1DA7DA00184FA5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C4ACFBBE2C1DA7DA00184FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4ACFBC02C1DA7DA00184FA5 /* gloopdrop_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gloopdrop_macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4ACFBA32C1DA7DA00184FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4ACFBB42C1DA7DA00184FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C41DECCF2C80D57500716631 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C41DECD12C80D5F800716631 /* Nosifer.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C421FF892C837A1800B369E9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C421FF832C837A1800B369E9 /* blob_mumble-1.wav */,
+				C421FF842C837A1800B369E9 /* blob_mumble-2.wav */,
+				C421FF852C837A1800B369E9 /* blob_mumble-3.wav */,
+				C421FF862C837A1800B369E9 /* bubbles.mp3 */,
+				C421FF872C837A1800B369E9 /* collect.wav */,
+				C421FF882C837A1800B369E9 /* miss.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		C421FF972C837D0E00B369E9 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				C421FF962C837D0E00B369E9 /* music.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		C4ACFB982C1DA7D900184FA5 = {
+			isa = PBXGroup;
+			children = (
+				C421FF9A2C83863700B369E9 /* GloopFlow.sks */,
+				C41DECCF2C80D57500716631 /* Fonts */,
+				C421FF892C837A1800B369E9 /* Sounds */,
+				C421FF972C837D0E00B369E9 /* Music */,
+				C44F858D2C447A2D0050D353 /* Collectible.swift */,
+				C44C7AFC2C1EB23500C0D368 /* SpriteKitHelper.swift */,
+				C44C7AF92C1EB19A00C0D368 /* Player.swift */,
+				C42FBA942C80E4F4008A2DC7 /* Assets.xcassets */,
+				C4ACFB9D2C1DA7D900184FA5 /* gloopdrop Shared */,
+				C4ACFBA82C1DA7DA00184FA5 /* gloopdrop iOS */,
+				C4ACFBB82C1DA7DA00184FA5 /* gloopdrop macOS */,
+				C421FF802C80E7B500B369E9 /* gloopdrop.app */,
+				C421FF812C80E7B500B369E9 /* gloopdrop.app */,
+			);
+			sourceTree = "<group>";
+		};
+		C4ACFB9D2C1DA7D900184FA5 /* gloopdrop Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C4ACFBA02C1DA7D900184FA5 /* GameScene.swift */,
+			);
+			path = "gloopdrop Shared";
+			sourceTree = "<group>";
+		};
+		C4ACFBA82C1DA7DA00184FA5 /* gloopdrop iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C421FF822C80EB9800B369E9 /* gloopdrop-iOS-Info.plist */,
+				C4ACFBA92C1DA7DA00184FA5 /* AppDelegate.swift */,
+				C4ACFBAB2C1DA7DA00184FA5 /* GameViewController.swift */,
+				C4ACFBAD2C1DA7DA00184FA5 /* Main.storyboard */,
+				C4ACFBB02C1DA7DA00184FA5 /* LaunchScreen.storyboard */,
+			);
+			path = "gloopdrop iOS";
+			sourceTree = "<group>";
+		};
+		C4ACFBB82C1DA7DA00184FA5 /* gloopdrop macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C4ACFBB92C1DA7DA00184FA5 /* AppDelegate.swift */,
+				C4ACFBBB2C1DA7DA00184FA5 /* GameViewController.swift */,
+				C4ACFBBD2C1DA7DA00184FA5 /* Main.storyboard */,
+				C4ACFBC02C1DA7DA00184FA5 /* gloopdrop_macOS.entitlements */,
+			);
+			path = "gloopdrop macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4ACFBA52C1DA7DA00184FA5 /* gloopdrop iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4ACFBCB2C1DA7DA00184FA5 /* Build configuration list for PBXNativeTarget "gloopdrop iOS" */;
+			buildPhases = (
+				C4ACFBA22C1DA7DA00184FA5 /* Sources */,
+				C4ACFBA32C1DA7DA00184FA5 /* Frameworks */,
+				C4ACFBA42C1DA7DA00184FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gloopdrop iOS";
+			productName = "gloopdrop iOS";
+			productReference = C421FF802C80E7B500B369E9 /* gloopdrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4ACFBB62C1DA7DA00184FA5 /* gloopdrop macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4ACFBCE2C1DA7DA00184FA5 /* Build configuration list for PBXNativeTarget "gloopdrop macOS" */;
+			buildPhases = (
+				C4ACFBB32C1DA7DA00184FA5 /* Sources */,
+				C4ACFBB42C1DA7DA00184FA5 /* Frameworks */,
+				C4ACFBB52C1DA7DA00184FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gloopdrop macOS";
+			productName = "gloopdrop macOS";
+			productReference = C421FF812C80E7B500B369E9 /* gloopdrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4ACFB992C1DA7D900184FA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				ORGANIZATIONNAME = "Beef Erikson Studios";
+				TargetAttributes = {
+					C4ACFBA52C1DA7DA00184FA5 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					C4ACFBB62C1DA7DA00184FA5 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = C4ACFB9C2C1DA7D900184FA5 /* Build configuration list for PBXProject "gloopdrop" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4ACFB982C1DA7D900184FA5;
+			preferredProjectObjectVersion = 73;
+			productRefGroup = C4ACFB982C1DA7D900184FA5;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4ACFBA52C1DA7DA00184FA5 /* gloopdrop iOS */,
+				C4ACFBB62C1DA7DA00184FA5 /* gloopdrop macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4ACFBA42C1DA7DA00184FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41DECD22C80D5F800716631 /* Nosifer.ttf in Resources */,
+				C421FF9B2C83863700B369E9 /* GloopFlow.sks in Resources */,
+				C4ACFBAF2C1DA7DA00184FA5 /* Base in Resources */,
+				C42FBA962C80E4F4008A2DC7 /* Assets.xcassets in Resources */,
+				C421FF8A2C837A1800B369E9 /* bubbles.mp3 in Resources */,
+				C421FF8B2C837A1800B369E9 /* collect.wav in Resources */,
+				C421FF8C2C837A1800B369E9 /* blob_mumble-2.wav in Resources */,
+				C421FF8D2C837A1800B369E9 /* miss.wav in Resources */,
+				C421FF8E2C837A1800B369E9 /* blob_mumble-1.wav in Resources */,
+				C421FF8F2C837A1800B369E9 /* blob_mumble-3.wav in Resources */,
+				C4ACFBB22C1DA7DA00184FA5 /* Base in Resources */,
+				C421FF992C837D0E00B369E9 /* music.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4ACFBB52C1DA7DA00184FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C421FF982C837D0E00B369E9 /* music.mp3 in Resources */,
+				C4ACFBBF2C1DA7DA00184FA5 /* Base in Resources */,
+				C421FF902C837A1800B369E9 /* bubbles.mp3 in Resources */,
+				C421FF9C2C83863700B369E9 /* GloopFlow.sks in Resources */,
+				C421FF912C837A1800B369E9 /* collect.wav in Resources */,
+				C421FF922C837A1800B369E9 /* blob_mumble-2.wav in Resources */,
+				C421FF932C837A1800B369E9 /* miss.wav in Resources */,
+				C421FF942C837A1800B369E9 /* blob_mumble-1.wav in Resources */,
+				C421FF952C837A1800B369E9 /* blob_mumble-3.wav in Resources */,
+				C42FBA952C80E4F4008A2DC7 /* Assets.xcassets in Resources */,
+				C41DECD32C80D5F800716631 /* Nosifer.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4ACFBA22C1DA7DA00184FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44C7AFA2C1EB19A00C0D368 /* Player.swift in Sources */,
+				C4ACFBC52C1DA7DA00184FA5 /* GameScene.swift in Sources */,
+				C44F858F2C447A330050D353 /* Collectible.swift in Sources */,
+				C4ACFBAC2C1DA7DA00184FA5 /* GameViewController.swift in Sources */,
+				C44C7AFE2C1EB23500C0D368 /* SpriteKitHelper.swift in Sources */,
+				C4ACFBAA2C1DA7DA00184FA5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4ACFBB32C1DA7DA00184FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44C7AFB2C1EB19A00C0D368 /* Player.swift in Sources */,
+				C4ACFBC62C1DA7DA00184FA5 /* GameScene.swift in Sources */,
+				C44F858E2C447A330050D353 /* Collectible.swift in Sources */,
+				C4ACFBBC2C1DA7DA00184FA5 /* GameViewController.swift in Sources */,
+				C44C7AFD2C1EB23500C0D368 /* SpriteKitHelper.swift in Sources */,
+				C4ACFBBA2C1DA7DA00184FA5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4ACFBAD2C1DA7DA00184FA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4ACFBAE2C1DA7DA00184FA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4ACFBB02C1DA7DA00184FA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4ACFBB12C1DA7DA00184FA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C4ACFBBD2C1DA7DA00184FA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4ACFBBE2C1DA7DA00184FA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4ACFBC92C1DA7DA00184FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4ACFBCA2C1DA7DA00184FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C4ACFBCC2C1DA7DA00184FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9PM4L6X66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gloopdrop-iOS-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = beef.erikson.studios.gloopdrop;
+				PRODUCT_NAME = gloopdrop;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4ACFBCD2C1DA7DA00184FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9PM4L6X66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gloopdrop-iOS-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = beef.erikson.studios.gloopdrop;
+				PRODUCT_NAME = gloopdrop;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4ACFBCF2C1DA7DA00184FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "gloopdrop macOS/gloopdrop_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9PM4L6X66;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = beef.erikson.studios.gloopdrop;
+				PRODUCT_NAME = gloopdrop;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C4ACFBD02C1DA7DA00184FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "gloopdrop macOS/gloopdrop_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9PM4L6X66;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = beef.erikson.studios.gloopdrop;
+				PRODUCT_NAME = gloopdrop;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4ACFB9C2C1DA7D900184FA5 /* Build configuration list for PBXProject "gloopdrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4ACFBC92C1DA7DA00184FA5 /* Debug */,
+				C4ACFBCA2C1DA7DA00184FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4ACFBCB2C1DA7DA00184FA5 /* Build configuration list for PBXNativeTarget "gloopdrop iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4ACFBCC2C1DA7DA00184FA5 /* Debug */,
+				C4ACFBCD2C1DA7DA00184FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4ACFBCE2C1DA7DA00184FA5 /* Build configuration list for PBXNativeTarget "gloopdrop macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4ACFBCF2C1DA7DA00184FA5 /* Debug */,
+				C4ACFBD02C1DA7DA00184FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4ACFB992C1DA7D900184FA5 /* Project object */;
+}
