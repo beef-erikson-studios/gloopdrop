@@ -15,8 +15,8 @@ import GoogleMobileAds
 
 /// AdMob configuration struct for times / Ad ID's.
 struct AdMobHelper {
-    static let bannerAdDisplayTime: TimeInterval = 30
-    static let bannerAdID = "ca-app-pub-3940256099942544/2435281174"
+    static let bannerAdDisplayTime: TimeInterval = 10
+    static let bannerAdID = "ca-app-pub-3940256099942544/2934735716"
 }
 
 
@@ -103,9 +103,9 @@ extension GameViewController: GADFullScreenContentDelegate {
 
 // MARK: - GAMEVIEWCONTROLLER EXTENSION FUNCTIONS
 
-// TODO: Make sure this works.
+
 // Hold the reusable view (only available for this file)
-fileprivate var _adBannerView = GADBannerView(adSize: GADAdSizeFluid)
+fileprivate var _adBannerView = GADBannerView()
 
 extension GameViewController {
     
@@ -123,7 +123,8 @@ extension GameViewController {
     ///
     /// - Parameters:
     ///   - id: String of the adBannerView
-    func setupBannerAdsWith(id: String) {
+    func setupBannerAdsWith(id: String, banner: GADBannerView) {
+        adBannerView = banner
         
         // Set up banner ads and view
         adBannerView.adUnitID = id
@@ -142,13 +143,29 @@ extension GameViewController {
     /// - Parameters:
     ///   - bannerView: The GADBannerView to add; this will be the ad.
     func addBannerViewToView(_ bannerView: GADBannerView) {
+        
+        // Add subview
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)
         
-        NSLayoutConstraint.activate([
-            bannerView.topAnchor.constraint(equalTo: view.topAnchor),
-            bannerView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
+        // This doesn't give width or height constraints, as the provided
+        // ad size gives the banner an intrinsic content size to size the view.
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                              attribute: .bottom,
+                              relatedBy: .equal,
+                              toItem: view.safeAreaLayoutGuide,
+                              attribute: .bottom,
+                              multiplier: 1,
+                              constant: 0),
+            NSLayoutConstraint(item: bannerView,
+                              attribute: .centerX,
+                              relatedBy: .equal,
+                              toItem: view,
+                              attribute: .centerX,
+                              multiplier: 1,
+                              constant: 0)
+          ])
     }
     
     /// Starts serving ads with a scheduled timer.
@@ -160,7 +177,6 @@ extension GameViewController {
         Timer.scheduledTimer(timeInterval: seconds, target: self,
                              selector: #selector(requestAds(_:)),
                              userInfo: adBannerView, repeats: false)
-        print("start serving ads...")
     }
     
     /// Starts serving banner ads.
@@ -172,9 +188,8 @@ extension GameViewController {
         // Display ad
         let bannerView = timer.userInfo as? GADBannerView
         let request = GADRequest()
-        bannerView?.load(request)
         
-        print("Loaded request \(request)")
+        bannerView?.load(request)
         
         // End timer
         timer.invalidate()
