@@ -42,6 +42,8 @@
 		C4ACFBBF2C1DA7DA00184FA5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4ACFBBE2C1DA7DA00184FA5 /* Base */; };
 		C4ACFBC52C1DA7DA00184FA5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ACFBA02C1DA7D900184FA5 /* GameScene.swift */; };
 		C4ACFBC62C1DA7DA00184FA5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ACFBA02C1DA7D900184FA5 /* GameScene.swift */; };
+		C4E3242A2D0B943000815E66 /* AdMobHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E324292D0B943000815E66 /* AdMobHelper.swift */; };
+		C4E3242B2D0B943000815E66 /* AdMobHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E324292D0B943000815E66 /* AdMobHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +72,12 @@
 		C4ACFBBB2C1DA7DA00184FA5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C4ACFBBE2C1DA7DA00184FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4ACFBC02C1DA7DA00184FA5 /* gloopdrop_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gloopdrop_macOS.entitlements; sourceTree = "<group>"; };
+		C4E324292D0B943000815E66 /* AdMobHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C4E324132D0B8CAB00815E66 /* AdMob */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AdMob; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C4ACFBA32C1DA7DA00184FA5 /* Frameworks */ = {
@@ -122,6 +129,7 @@
 		C4ACFB982C1DA7D900184FA5 = {
 			isa = PBXGroup;
 			children = (
+				C4E324132D0B8CAB00815E66 /* AdMob */,
 				C421FF9A2C83863700B369E9 /* GloopFlow.sks */,
 				C41DECCF2C80D57500716631 /* Fonts */,
 				C421FF892C837A1800B369E9 /* Sounds */,
@@ -129,12 +137,14 @@
 				C44F858D2C447A2D0050D353 /* Collectible.swift */,
 				C44C7AFC2C1EB23500C0D368 /* SpriteKitHelper.swift */,
 				C44C7AF92C1EB19A00C0D368 /* Player.swift */,
+				C4E324292D0B943000815E66 /* AdMobHelper.swift */,
 				C42FBA942C80E4F4008A2DC7 /* Assets.xcassets */,
 				C4ACFB9D2C1DA7D900184FA5 /* gloopdrop Shared */,
 				C4ACFBA82C1DA7DA00184FA5 /* gloopdrop iOS */,
 				C4ACFBB82C1DA7DA00184FA5 /* gloopdrop macOS */,
 				C421FF802C80E7B500B369E9 /* gloopdrop.app */,
 				C421FF812C80E7B500B369E9 /* gloopdrop.app */,
+				C4E324222D0B8D2C00815E66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +179,13 @@
 			path = "gloopdrop macOS";
 			sourceTree = "<group>";
 		};
+		C4E324222D0B8D2C00815E66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,6 +200,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C4E324132D0B8CAB00815E66 /* AdMob */,
 			);
 			name = "gloopdrop iOS";
 			productName = "gloopdrop iOS";
@@ -201,6 +221,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				C4E324132D0B8CAB00815E66 /* AdMob */,
+			);
 			name = "gloopdrop macOS";
 			productName = "gloopdrop macOS";
 			productReference = C421FF812C80E7B500B369E9 /* gloopdrop.app */;
@@ -214,7 +237,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = "Beef Erikson Studios";
 				TargetAttributes = {
 					C4ACFBA52C1DA7DA00184FA5 = {
@@ -295,6 +318,7 @@
 				C4ACFBAC2C1DA7DA00184FA5 /* GameViewController.swift in Sources */,
 				C44C7AFE2C1EB23500C0D368 /* SpriteKitHelper.swift in Sources */,
 				C4ACFBAA2C1DA7DA00184FA5 /* AppDelegate.swift in Sources */,
+				C4E3242A2D0B943000815E66 /* AdMobHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +332,7 @@
 				C4ACFBBC2C1DA7DA00184FA5 /* GameViewController.swift in Sources */,
 				C44C7AFD2C1EB23500C0D368 /* SpriteKitHelper.swift in Sources */,
 				C4ACFBBA2C1DA7DA00184FA5 /* AppDelegate.swift in Sources */,
+				C4E3242B2D0B943000815E66 /* AdMobHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +400,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -397,6 +423,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "\"$(OTHER_LDFLAGS)-ObjC\"";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -436,6 +463,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -451,6 +479,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "\"$(OTHER_LDFLAGS)-ObjC\"";
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -475,6 +504,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					/usr/lib/swift,
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = beef.erikson.studios.gloopdrop;
@@ -506,6 +536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					/usr/lib/swift,
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = beef.erikson.studios.gloopdrop;
@@ -527,6 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z9PM4L6X66;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -556,6 +588,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Z9PM4L6X66;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
