@@ -11,25 +11,15 @@ import GameplayKit
 import GoogleMobileAds
 
 class GameViewController: UIViewController {
-
-    var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set view width for ads
-        let viewWidth = view.frame.inset(by: view.safeAreaInsets).width
-        let adaptiveSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth)
-
-        bannerView = GADBannerView(adSize: adaptiveSize)
-        
         // Add test machine(s).
         GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "60fbaa1eb87bfad1db0f6003e966ab34" ]
         
-        // TODO: - FIX TIMER SO IT CONTINUOUSLY REINSTANTIATES BANNER.
         // Add banner ads to view
-        //addBannerViewToView(bannerView)
-        setupBannerAdsWith(id: AdMobHelper.bannerAdID, banner: bannerView)
+        setupBannerAdsWith(id: AdMobHelper.bannerAdID, view: view)
         
         // Create the view
         if let view = self.view as! SKView? {

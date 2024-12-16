@@ -9,7 +9,7 @@
 //  Copyright © 2024 Beef Erikson Studios. All rights reserved.
 //
 
-import Foundation
+import SpriteKit
 import GoogleMobileAds
 
 
@@ -123,8 +123,14 @@ extension GameViewController {
     ///
     /// - Parameters:
     ///   - id: String of the adBannerView
-    func setupBannerAdsWith(id: String, banner: GADBannerView) {
-        adBannerView = banner
+    ///   - view: The UIView to place ad in.
+    func setupBannerAdsWith(id: String, view: UIView) {
+        
+        // Set view width for ads
+        let viewWidth = view.frame.inset(by: view.safeAreaInsets).width
+        let adaptiveSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth)
+
+        adBannerView = GADBannerView(adSize: adaptiveSize)
         
         // Set up banner ads and view
         adBannerView.adUnitID = id
