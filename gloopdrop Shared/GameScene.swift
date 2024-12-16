@@ -43,6 +43,9 @@ class GameScene: SKScene {
     let musicAudioNode = SKAudioNode(fileNamed: "music.mp3")
     let bubblesAudioNode = SKAudioNode(fileNamed: "bubbles.mp3")
     
+    // Start game button
+    let startGameButton = SKSpriteNode(imageNamed: "start")
+    
     // MARK: - Overrides
     
     override func didMove(to view: SKView) {
@@ -112,6 +115,7 @@ class GameScene: SKScene {
         
         // Set up the UI
         setupLabels()
+        setupStartButton()
         
         // Set up player
         player.position = CGPoint(x: size.width/2, y: foreground.frame.maxY)
@@ -182,11 +186,35 @@ class GameScene: SKScene {
         addChild(levelLabel)
     }
     
+    ///  Sets position, scale, animation, and initialization of the start game button.
+    func setupStartButton() {
+        startGameButton.name = "start"
+        startGameButton.setScale(0.55)
+        startGameButton.zPosition = Layer.ui.rawValue
+        startGameButton.position = CGPoint(x: frame.midX, y: frame.midY)
+        addChild(startGameButton)
+        
+        // Animation
+        let scaleUp = SKAction.scale(to: 0.55, duration: 0.65)
+        let scaleDown = SKAction.scale(to: 0.50, duration: 0.65)
+        let playBounce = SKAction.sequence([scaleDown, scaleUp])
+        let bounceRepeat = SKAction.repeatForever(playBounce)
+        startGameButton.run(bounceRepeat)
+    }
+    
+    func showStartButton() {
+        startGameButton.run(SKAction.fadeIn(withDuration: 0.25))
+    }
+    
+    func hideStartButton() {
+        startGameButton.run(SKAction.fadeOut(withDuration: 0.25))
+    }
+    
     func showMessage(_ message: String) {
         // Set up message label
         let messageLabel = SKLabelNode()
         messageLabel.name = "message"
-        messageLabel.position = CGPoint(x: frame.midX, y: player.frame.maxY + 100)
+        messageLabel.position = CGPoint(x: frame.midX, y: frame.midY + startGameButton.size.height/2)
         messageLabel.zPosition = Layer.ui.rawValue
         messageLabel.numberOfLines = 2
         
@@ -328,8 +356,9 @@ class GameScene: SKScene {
         // Run action
         run(repeatAction, withKey: "gloop")
         
-        // Hide center message
+        // Hide center message and start button
         hideMessage()
+        hideStartButton()
     }
     
     func checkForRemainingDrops() {
@@ -362,6 +391,7 @@ class GameScene: SKScene {
         // Reset game
         resetPlayerPosition()
         popRemainingDrops()
+        showStartButton()
         
         // Remove repeatable action on main scene
         removeAction(forKey: "gloop")
@@ -413,14 +443,13 @@ class GameScene: SKScene {
     func touchDown(atPoint pos: CGPoint) {
         let touchedNodes = nodes(at: pos)
         for touchedNode in touchedNodes {
-            if touchedNode.name == "player" {
+            if touchedNode.name == "player" && gameInProgress == true {
                 movingPlayer = true
             }
-        }
-        
-        if gameInProgress == false {
-            spawnMultipleGloops()
-            return
+            else if touchedNode == startGameButton && gameInProgress == false {
+                spawnMultipleGloops()
+                return
+            }
         }
     }
     
