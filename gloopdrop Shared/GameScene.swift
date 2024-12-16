@@ -46,6 +46,14 @@ class GameScene: SKScene {
     // Start game button
     let startGameButton = SKSpriteNode(imageNamed: "start")
     
+    // Continue Game
+    let watchAdButton = SKSpriteNode(imageNamed: "watchAd")
+    let continueGameButton = SKSpriteNode(imageNamed: "continueRemaining-0")
+    let maxNumberOfContinues = 5
+    var numberOfFreeContinues: Int = 0
+    
+    var isContinue = false
+    
     // MARK: - Overrides
     
     override func didMove(to view: SKView) {
@@ -116,6 +124,7 @@ class GameScene: SKScene {
         // Set up the UI
         setupLabels()
         setupStartButton()
+        setupContunues()
         
         // Set up player
         player.position = CGPoint(x: size.width/2, y: foreground.frame.maxY)

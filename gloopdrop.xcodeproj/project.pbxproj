@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40785192D108DA100278E74 /* GameScene+Continue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40785182D108DA100278E74 /* GameScene+Continue.swift */; };
+		C407851A2D108DA100278E74 /* GameScene+Continue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40785182D108DA100278E74 /* GameScene+Continue.swift */; };
 		C41DECD22C80D5F800716631 /* Nosifer.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C41DECD12C80D5F800716631 /* Nosifer.ttf */; };
 		C41DECD32C80D5F800716631 /* Nosifer.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C41DECD12C80D5F800716631 /* Nosifer.ttf */; };
 		C421FF8A2C837A1800B369E9 /* bubbles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C421FF862C837A1800B369E9 /* bubbles.mp3 */; };
@@ -47,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C40785182D108DA100278E74 /* GameScene+Continue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Continue.swift"; sourceTree = "<group>"; };
 		C41DECD12C80D5F800716631 /* Nosifer.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nosifer.ttf; sourceTree = "<group>"; };
 		C421FF802C80E7B500B369E9 /* gloopdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gloopdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C421FF812C80E7B500B369E9 /* gloopdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gloopdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C40785172D108D6900278E74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C40785182D108DA100278E74 /* GameScene+Continue.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C41DECCF2C80D57500716631 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +148,7 @@
 				C44F858D2C447A2D0050D353 /* Collectible.swift */,
 				C44C7AFC2C1EB23500C0D368 /* SpriteKitHelper.swift */,
 				C44C7AF92C1EB19A00C0D368 /* Player.swift */,
+				C40785172D108D6900278E74 /* Extensions */,
 				C4E324292D0B943000815E66 /* AdMobHelper.swift */,
 				C42FBA942C80E4F4008A2DC7 /* Assets.xcassets */,
 				C4ACFB9D2C1DA7D900184FA5 /* gloopdrop Shared */,
@@ -312,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40785192D108DA100278E74 /* GameScene+Continue.swift in Sources */,
 				C44C7AFA2C1EB19A00C0D368 /* Player.swift in Sources */,
 				C4ACFBC52C1DA7DA00184FA5 /* GameScene.swift in Sources */,
 				C44F858F2C447A330050D353 /* Collectible.swift in Sources */,
@@ -326,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C407851A2D108DA100278E74 /* GameScene+Continue.swift in Sources */,
 				C44C7AFB2C1EB19A00C0D368 /* Player.swift in Sources */,
 				C4ACFBC62C1DA7DA00184FA5 /* GameScene.swift in Sources */,
 				C44F858E2C447A330050D353 /* Collectible.swift in Sources */,
