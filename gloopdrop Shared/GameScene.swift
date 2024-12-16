@@ -50,7 +50,11 @@ class GameScene: SKScene {
     let watchAdButton = SKSpriteNode(imageNamed: "watchAd")
     let continueGameButton = SKSpriteNode(imageNamed: "continueRemaining-0")
     let maxNumberOfContinues = 5
-    var numberOfFreeContinues: Int = 0
+    var numberOfFreeContinues: Int = 1 {
+        didSet {
+            updateContinueButton()
+        }
+    }
     
     var isContinue = false
     
@@ -132,7 +136,7 @@ class GameScene: SKScene {
         addChild(player)
         
         // Show message
-        showMessage("Tap to start game")
+        showMessage("Tap to start game\nWatch ad for more continues")
         
         // Set up the gloop flow
         setupGloopFlow()
@@ -320,10 +324,12 @@ class GameScene: SKScene {
         // Reset walk cycle
         player.walk()
         
-        // Reset the level and score
-        if gameInProgress == false {
+        // Reset the level and score if isContinue is false. Otherwise, sets isContinue to false.
+        if gameInProgress == false && isContinue == false {
             score = 0
             level = 1
+        } else {
+            isContinue = false
         }
         
         // Set number of drops based on the level
@@ -389,7 +395,7 @@ class GameScene: SKScene {
     // Player lost
     func gameOver() {
         // Show message
-        showMessage("Game Over\nTap to try again")
+        showMessage("Game Over\nStart a New Game or Continue")
         
         // Update game status
         gameInProgress = false
@@ -454,6 +460,13 @@ class GameScene: SKScene {
         for touchedNode in touchedNodes {
             if touchedNode.name == "player" && gameInProgress == true {
                 movingPlayer = true
+            }
+            else if touchedNode == watchAdButton && gameInProgress == false {
+                // TODO: implement this
+            }
+            else if touchedNode == continueGameButton && gameInProgress == false {
+                useContinue()
+                return
             }
             else if touchedNode == startGameButton && gameInProgress == false {
                 spawnMultipleGloops()

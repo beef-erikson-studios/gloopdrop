@@ -29,6 +29,7 @@ extension GameScene {
         updateContinueButton()
     }
     
+    /// Updates continue button based on number of continues remaining.
     func updateContinueButton() {
         if numberOfFreeContinues > maxNumberOfContinues {
             let texture = SKTexture(imageNamed: "continueRemaining-max")
@@ -36,6 +37,15 @@ extension GameScene {
         } else {
             let texture = SKTexture(imageNamed: "continueRemaining-\(numberOfFreeContinues)")
             continueGameButton.texture = texture
+        }
+    }
+    
+    /// Sets isContinue state to true and substracts a continue before spawning gloops.
+    func useContinue() {
+        if numberOfFreeContinues > 0 {
+            isContinue = true
+            numberOfFreeContinues -= 1
+            spawnMultipleGloops()
         }
     }
 }
